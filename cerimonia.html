@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locais para Casamento</title>
+    <link rel="stylesheet" href="cerimonia.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Fontes -->
+<link href="https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro" rel="stylesheet">
+
+</head>
+
+<body>
+
+<h1>Locais para Casamento</h1>
+<div class="container">
+    <!-- Local 1 -->
+    <div class="service-item" onclick="showModal('modal1')">
+        <img src="sitio.jpg" alt="Foto do Local 1">
+        <h3>Sítio Paraíso</h3>
+        <p>Descrição breve do local...</p>
+    </div>
+    <!-- Local 2 -->
+    <div class="service-item" onclick="showModal('modal2')">
+        <img src="salao.jpg" alt="Foto do Local 2">
+        <h3>Salão das Flores</h3>
+        <p>Descrição breve do local...</p>
+    </div>
+    <!-- Local 3 -->
+    <div class="service-item" onclick="showModal('modal3')">
+        <img src="praia.jpg" alt="Foto do Local 3">
+        <h3>Espaço Solar</h3>
+        <p>Descrição breve do local...</p>
+    </div>
+    <!-- Local 4 -->
+    <div class="service-item" onclick="showModal('modal4')">
+        <img src="villa.jpg" alt="Foto do Local 4">
+        <h3>Villa Bella</h3>
+        <p>Descrição breve do local...</p>
+    </div>
+    <!-- Local 5 -->
+    <div class="service-item" onclick="showModal('modal5')">
+        <img src="serra.jpeg" alt="Foto do Local 5">
+        <h3>Casa da Serra</h3>
+        <p>Descrição breve do local...</p>
+    </div>
+    <!-- Local 6 -->
+    <div class="service-item" onclick="showModal('modal6')">
+        <img src="chacara.jpg" alt="Foto do Local 6">
+        <h3>Chácara dos Sonhos</h3>
+        <p>Descrição breve do local...</p>
+    </div>
+</div>
+
+<!-- Modals para cada local -->
+<!-- Modal para Sítio Paraíso -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <span class="modal-close" onclick="closeModal('modal1')">&times;</span>
+        <h2>Sítio Paraíso</h2>
+        <p>Espaço amplo e rodeado pela natureza, ideal para eventos ao ar livre com belos jardins.</p>
+        <p>Avaliação: ⭐⭐⭐⭐⭐</p>
+        <p>Valor: R$8.000</p>
+        <p>Capacidade: 150 pessoas</p>
+    </div>
+</div>
+
+<!-- Modal para Salão das Flores -->
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <span class="modal-close" onclick="closeModal('modal2')">&times;</span>
+        <h2>Salão das Flores</h2>
+        <p>Salão com decoração elegante e florais requintados, perfeito para cerimônias e festas sofisticadas.</p>
+        <p>Avaliação: ⭐⭐⭐⭐☆</p>
+        <p>Valor: R$10.000</p>
+        <p>Capacidade: 200 pessoas</p>
+    </div>
+</div>
+
+<!-- Modal para Espaço Solar -->
+<div id="modal3" class="modal">
+    <div class="modal-content">
+        <span class="modal-close" onclick="closeModal('modal3')">&times;</span>
+        <h2>Espaço Solar</h2>
+        <p>Espaço contemporâneo com vista panorâmica e salão climatizado, ideal para casamentos à noite.</p>
+        <p>Avaliação: ⭐⭐⭐⭐⭐</p>
+        <p>Valor: R$12.000</p>
+        <p>Capacidade: 250 pessoas</p>
+    </div>
+</div>
+
+<!-- Modal para Villa Bella -->
+<div id="modal4" class="modal">
+    <div class="modal-content">
+        <span class="modal-close" onclick="closeModal('modal4')">&times;</span>
+        <h2>Villa Bella</h2>
+        <p>Charmosa villa com espaços internos e externos para cerimônias e recepções, em meio à natureza.</p>
+        <p>Avaliação: ⭐⭐⭐⭐⭐</p>
+        <p>Valor: R$15.000</p>
+        <p>Capacidade: 300 pessoas</p>
+    </div>
+</div>
+
+<!-- Modal para Casa da Serra -->
+<div id="modal5" class="modal">
+    <div class="modal-content">
+        <span class="modal-close" onclick="closeModal('modal5')">&times;</span>
+        <h2>Casa da Serra</h2>
+        <p>Local aconchegante na serra, com ambiente rústico e charmoso para casamentos intimistas.</p>
+        <p>Avaliação: ⭐⭐⭐⭐☆</p>
+        <p>Valor: R$7.000</p>
+        <p>Capacidade: 100 pessoas</p>
+    </div>
+</div>
+
+<!-- Modal para Chácara dos Sonhos -->
+<div id="modal6" class="modal">
+    <div class="modal-content">
+        <span class="modal-close" onclick="closeModal('modal6')">&times;</span>
+        <h2>Chácara dos Sonhos</h2>
+        <p>Chácara encantadora com espaço para cerimônias ao ar livre e área coberta para festas.</p>
+        <p>Avaliação: ⭐⭐⭐⭐⭐</p>
+        <p>Valor: R$9.500</p>
+        <p>Capacidade: 180 pessoas</p>
+    </div>
+</div>
+
+<!-- Continue com modais para cada local... -->
+
+<script>
+    function showModal(modalId) {
+        document.getElementById(modalId).style.display = 'block';
+    }
+
+    function closeModal(modalId) {
+        document.getElementById(modalId).style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+        const modals = document.getElementsByClassName('modal');
+        for (let modal of modals) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    }
+</script>
+<div class="menu-container">
+    <div class="hamburger" id="hamburger">
+        &#9776; <!-- Ícone de hambúrguer -->
+    </div>
+    <nav class="sidebar" id="sidebar">
+        <ul>
+            <li class="active"><a href="cerimonia.html"><span class="underline"></span></a></li>
+            <ul>
+                <li class="active"><a href="indexx.html">Home<span class="underline"></span></a></li>
+                <li><a href="cadastro2.html">login<span class="underline"></span></a></li>
+                <li><a href="cerimonia.html">Cerimônia<span class="underline"></span></a></li>
+                <li><a href="padres.html">Celebrantes<span class="underline"></span></a></li>
+                <li><a href="buffet.html">Buffet<span class="underline"></span></a></li>
+                <li><a href="decoracao.html">Decoração<span class="underline"></span></a></li>
+                <li><a href="historias.html">historias<span class="underline"></span></a></li>
+            </ul>
+        </header>
+
+        <script src="cerimonia.js"></script>
+    </body>
+    
+        </ul>
+    </nav>
+</div>
+
+</html>
+
+</body>
+</html>

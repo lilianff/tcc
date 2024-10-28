@@ -1,0 +1,157 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.header {
+    background-color: #43dc95;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.city-selection {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.city-selection label {
+    margin-right: 10px;
+}
+
+.map {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 40px;
+}
+
+.buffets-list {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section-title {
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #a96700;
+}
+
+.buffet {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.buffet:hover {
+    transform: scale(1.02);
+}
+
+.buffet-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.buffet h3 {
+    font-size: 24px;
+    color: #a96700;
+    margin-bottom: 10px;
+}
+
+.buffet p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.rating {
+    font-size: 18px;
+    color: #ffcc00;
+    margin: 10px 0;
+}
+
+.owner-profile {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+.hamburger {
+    font-size: 30px; /* Tamanho do ícone de hambúrguer */
+    cursor: pointer;
+    position: fixed; /* Mantém o ícone fixo na tela */
+    left: 20px; /* Distância do lado esquerdo */
+    top: 20px; /* Distância do topo */
+    color: #5a3e30; /* Cor marrom escuro */
+    z-index: 1001; /* Para garantir que o ícone fique acima do menu */
+}
+
+.sidebar {
+    position: fixed; /* Fica fixo à esquerda */
+    top: 0; /* Começa no topo da tela */
+    left: -250px; /* Escondido inicialmente */
+    width: 250px; /* Largura do menu */
+    height: 100%; /* Altura total da tela */
+    background-color: #fff; /* Fundo branco para o menu */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+    transition: left 0.3s; /* Transição suave para o menu */
+    z-index: 1000; /* Fica acima de outros elementos */
+}
+
+.sidebar ul {
+    list-style: none; /* Remove marcadores da lista */
+    padding: 20px; /* Espaçamento interno */
+}
+
+.sidebar ul li {
+    margin: 20px 0; /* Espaço entre os itens do menu */
+}
+
+.sidebar ul li a {
+    text-decoration: none; /* Remove sublinhado */
+    color: #5a3e30; /* Cor marrom escuro para os links */
+    font-size: 1.2rem; /* Tamanho da fonte dos links */
+}
+
+.sidebar.active {
+    left: 0; /* Move o menu para a posição visível */
+}

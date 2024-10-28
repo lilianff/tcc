@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buffet - Tudo para o Sim</title>
+    <link rel="stylesheet" href="buffet.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro" rel="stylesheet">
+</head>
+<body>
+    <!-- Início do Header -->
+    <header class="header">
+        <div class="header-content">
+            <h1>Buffet - Tudo para o Sim</h1>
+            <div class="city-selection">
+                <label for="city">Selecione sua cidade:</label>
+                <select id="city" onchange="updateMap()">
+                    <option value="">Selecione uma cidade</option>
+                    <option value="sao-paulo">São Paulo</option>
+                    <option value="rio-de-janeiro">Rio de Janeiro</option>
+                    <option value="belo-horizonte">Belo Horizonte</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <!-- Fim do Header -->
+
+    <!-- Início do Mapa -->
+    <div id="map" class="map"></div>
+    <!-- Fim do Mapa -->
+
+    <!-- Início da Seção dos Melhores Buffets -->
+    <section id="best-buffets" class="buffets-list">
+        <h2 class="section-title">Melhores Buffets para Casamento</h2>
+
+        <div class="buffet" id="buffet1">
+            <img src="italiano.png" alt="Buffet La Bella Festa" class="buffet-image">
+            <h3>Buffet La Bella Festa</h3>
+            <p>O Buffet La Bella Festa é perfeito para casais que desejam uma experiência gastronômica requintada. Com um cardápio que combina sabores italianos e brasileiros, oferecemos pratos como risoto de camarão e filé ao molho de vinho tinto. Nossa equipe dedica-se a transformar seu casamento em um evento inesquecível.</p>
+            <p class="rating">Avaliação: ★★★★★</p>
+            <p>Contato: (11) 99999-9999</p>
+            <div class="owner-profile">
+                <img class="profile-image" src="perfil2.jpeg" alt="Perfil do Dono">
+                <span>João Silva</span>
+            </div>
+        </div>
+
+        <div class="buffet" id="buffet2">
+            <img src="arroz.jpeg" alt="Buffet Sabor e Magia" class="buffet-image">
+            <h3>Buffet Sabor e Magia</h3>
+            <p>No Buffet Sabor e Magia, cada casamento é uma celebração única. Oferecemos um menu personalizado que inclui desde aperitivos sofisticados até sobremesas elaboradas, como um bolo de chocolate trufado. Com um serviço excepcional, garantimos que seus convidados ficarão encantados.</p>
+            <p class="rating">Avaliação: ★★★★☆</p>
+            <p>Contato: (11) 88888-8888</p>
+            <div class="owner-profile">
+                <img class="profile-image" src="perfil3.jpeg" alt="Perfil do Dono">
+                <span>Maria Oliveira</span>
+            </div>
+        </div>
+
+        <div class="buffet" id="buffet3">
+            <img src="foto3.jpeg" alt="Buffet Elegância Gourmet" class="buffet-image">
+            <h3>Buffet Elegância Gourmet</h3>
+            <p>Buffet Elegância Gourmet é sinônimo de sofisticação. Com opções que vão do buffet frio ao coquetel completo, nosso menu é adaptável às necessidades de cada casal. Destaque para o nosso famoso prato de filé mignon com molho de ervas, ideal para impressionar os convidados.</p>
+            <p class="rating">Avaliação: ★★★★☆</p>
+            <p>Contato: (11) 77777-7777</p>
+            <div class="owner-profile">
+                <img class="profile-image" src="perfil4.jpg" alt="Perfil do Dono">
+                <span>Lucas Mendes</span>
+            </div>
+        </div>
+
+        <div class="buffet" id="buffet4">
+            <img src="foto4.jpg" alt="Buffet Amor à Mesa" class="buffet-image">
+            <h3>Buffet Amor à Mesa</h3>
+            <p>Com um conceito que valoriza a culinária local, o Buffet Amor à Mesa oferece pratos típicos e inovadores, preparados com ingredientes frescos e de qualidade. Nossos serviços incluem não apenas comida deliciosa, mas também uma apresentação impecável, criando uma atmosfera romântica.</p>
+            <p class="rating">Avaliação: ★★★☆☆</p>
+            <p>Contato: (11) 66666-6666</p>
+            <div class="owner-profile">
+                <img class="profile-image" src="perfil5.jpg" alt="Perfil do Dono">
+                <span>Fernanda Costa</span>
+            </div>
+        </div>
+
+        <div class="buffet" id="buffet5">
+            <img src="foto5.jpg" alt="Buffet Doce Sabor" class="buffet-image">
+            <h3>Buffet Doce Sabor</h3>
+            <p>Buffet Doce Sabor é ideal para quem sonha com um casamento doce e romântico. Oferecemos uma variedade de opções de buffet, incluindo opções vegetarianas e veganas, com sobremesas irresistíveis, como mini tortas de frutas e pavês. Cada detalhe é cuidadosamente pensado para o seu grande dia.</p>
+            <p class="rating">Avaliação: ★★★★★</p>
+            <p>Contato: (11) 55555-5555</p>
+            <div class="owner-profile">
+                <img class="profile-image" src="perfil6.jpg" alt="Perfil do Dono">
+                <span>Roberto Almeida</span>
+            </div>
+        </div>
+
+        <div class="buffet" id="buffet6">
+            <img src="foto6.jpeg" alt="Buffet Festa dos Sonhos" class="buffet-image">
+            <h3>Buffet Festa dos Sonhos</h3>
+            <p>No Buffet Festa dos Sonhos, transformamos seu sonho em realidade com um menu variado e inovador. Desde entradas sofisticadas até pratos principais exuberantes, como lombo recheado com frutas secas, garantimos que cada convidado tenha uma experiência memorável. Nossa equipe está pronta para atender todas as suas expectativas.</p>
+            <p class="rating">Avaliação: ★★★★☆</p>
+            <p>Contato: (11) 44444-4444</p>
+            <div class="owner-profile">
+                <img class="profile-image" src="perfil8.jpg" alt="Perfil do Dono">
+                <span>Patrícia Lima</span>
+            </div>
+        </div>
+    </section>
+    <!-- Fim da Seção dos Melhores Buffets -->
+
+    <!-- Início do Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Tudo para o Sim. Todos os direitos reservados.</p>
+            <p>Desenvolvido com ❤️ pela equipe Tudo para o Sim.</p>
+        </div>
+    </footer>
+    <!-- Fim do Footer -->
+
+    <script src="buffet.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfv-Z5OdgX_v9ZIh54c0L9hp72PDrIwEU&callback=initMap"></script>
+</body>
+</html>
